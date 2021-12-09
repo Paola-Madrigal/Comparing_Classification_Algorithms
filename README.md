@@ -61,3 +61,32 @@ Let's review the accuracy we get:
 * Test accuracy: 0.9833
 
 ## 4. K-Nearest Neighbors
+K-Nearest Neighbors, as the name suggests, is based on the class of the K data points that are nearest to the query point. In other words, we have a query point which we want to classify. We define a value for K (usually an uneven number to avoid ties) and we find the K closest data points to the query point. The majority of the class we find will be the classification we give to the query point:
+
+<p align="center">
+<img width="460" height="300" src="https://user-images.githubusercontent.com/93732824/145446634-4071bf34-3c51-4815-aa8f-f1caa1a4adc7.png">
+</p>
+
+Let's review the accuracy we get:
+* Train accuracy: 0.9578 
+* Test accuracy: 0.9833
+
+## 5. Neural Network
+The basis of Neural Networks is the ability to stack layers of different models in order to generate a final output given certain inputs. It has three main parts: input layer, hidden layers and output layer. Each hidden layer includes a linear model and a non-linearity, and the outputs generated will become the inputs of the next layer until the output layer is reached:
+
+<p align="center">
+<img width="400" height="350" src="https://user-images.githubusercontent.com/93732824/145452955-6535ddd9-af5c-4397-806d-8ebd3e8d7676.png">
+</p>
+
+Let's review the accuracy we get:
+* Train accuracy: 0.9072 
+* Test accuracy: 0.9833
+
+## Conclusion
+Due to the simplicity of the dataset, we cannot see a lot of difference between the accuracy of each model, but we now have an idea of how each model works:
+
+![image](https://user-images.githubusercontent.com/93732824/145453555-5b520c5b-54e5-44d5-ad89-4f2c92c14919.png)
+
+As we can see, Logistic Regression is the simplest model and provides a slightly lower accuracy. The other models reached an accuracy of 0.9833, and it is likely we cannot go higher due to the noise in the dataset. We do not want the algorithms to see this noise as a pattern, since that would mean they are overfitting the model.
+
+Another important takeaway is that there are different reasons to choose between one model or another. In this case, since 4 models are reaching the same accuracy, we would choose the one that has less computational impact. For more complex datasets, the accuracy won't be so similar between the models, and we will have to define wether we want to achieve higher accuracy or save computational speed. This will depend on every problem itself.
