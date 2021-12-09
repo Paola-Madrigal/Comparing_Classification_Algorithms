@@ -1,4 +1,9 @@
 # Comparing Classification Algorithms
+
+<p align="center">
+<img width="460" height="250" src="https://cdn.perkuto.com/wp-content/uploads/2018/06/ABOption2-1.jpg">
+</p>
+
 There are a lot of different methods to approach a Classification issue. The intent of this article is to compare between 5 different Classification models. We will be using a simple dataset with two features (Age, Interest) and one target (Success). The dataset was obtained from Kaggle: https://www.kaggle.com/sveneschlbeck/beginners-classification-dataset
 
 Resources:
